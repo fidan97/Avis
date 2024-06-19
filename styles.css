@@ -1,0 +1,206 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .container {
+   /* max-width: 1200px;*/
+   width: 80%
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 2rem 0;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0 20px;
+    font-size: 24px;
+    color: #2c3e50;
+    flex-grow: 1;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+  /*
+  header .main-image {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }*/
+  
+  /*.toggle-button {
+    font-size: 24px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }*/
+  .toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+  
+
+  .toggle-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+
+  
+ /* .toggle-button .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+  
+
+  .toggle-button.up .arrow {
+    transform: rotate(180deg);
+  }*/
+
+  .toggle-button i {
+    font-size: 20px;
+  }
+
+  .content {
+     margin-top: 2rem;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 1;
+  }
+  
+  .content.show {
+    display: block;
+    opacity: 1;
+  }
+
+  .filter {
+    text-align: center;
+   margin-bottom: 2rem;
+  }
+  
+  #cityFilter {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+  .filter select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  .filter select:focus {
+    border-color: #3498db;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  td:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .charts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .chart-container {
+    width: 45%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+
+  .chart-container:hover {
+    transform: scale(1.05);
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header h1 {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+  
+    .chart-container {
+      width: 100%;
+    }
+  }

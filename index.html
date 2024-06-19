@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistikken på det norske boligmarkedet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <img src="\DALL·E 2024-06-18 16.38.29 - A picturesque Norwegian house from an outside view. The house has traditional Scandinavian architecture with a steep roof, wooden exterior painted in .webp" alt="Eiendom bilde" class="main-image">
+        <h1>Statistikken på Det Norske Boligmarkedet</h1>
+        <button id="toggleButton" class="toggle-button">
+          Se mer <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+     <!-- <button id="toggleButton" class="toggle-button">
+        Se mer <span class="arrow">▼</span>
+      </button>-->
+    </header>
+    <div id="content" class="content">
+      <div class="filter">
+        <label for="cityFilter">Se oversikt over endringene og gjennomsnittet over hele landet og i store byer</label>
+        <select id="cityFilter">
+          <option value="Norge">Norge</option>
+          <option value="Oslo">Oslo</option>
+          <option value="Bergen">Bergen</option>
+          <option value="Trondheim">Trondheim</option>
+          <option value="Stavanger m/omegn">Stavanger m/omegn</option>
+          <option value="Kristiansand m/omegn">Kristiansand m/omegn</option>
+          <option value="Tromsø">Tromsø</option>
+        </select>
+      </div>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Endring siste måned</th>
+            <th>Endring sesongjustert siste måned</th>
+            <th>Endring hittil i år</th>
+            <th>Endring siste år</th>
+            <th>Endring siste 5 år</th>
+            <th>Endring siste 10 år</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamisk innhold vil bli lagt til her -->
+        </tbody>
+      </table>
+      <div class="charts">
+        <div class="chart-container">
+          <h3>Gjennomsnitt kvm. pris</h3>
+          <canvas id="avgPricePerSqMChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>Gjennomsnittspris</h3>
+          <canvas id="avgPriceChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
